@@ -1,11 +1,9 @@
-# Parte I
 def initialize_dict(student_name, subject_grades):
     return {
         student_name: subject_grades
     }
 
 
-# Parte II
 def add_student(student_grades=None):
     if student_grades is None:
         student_grades = {}
@@ -33,7 +31,6 @@ def add_student(student_grades=None):
     return student_grades
 
 
-# Parte III
 def get_students(student_grades, keys):
     result = {}
 
@@ -52,8 +49,6 @@ def get_students(student_grades, keys):
 
     return result
 
-
-# Parte IV
 def avg_by_student(student_grades, keys=None):
     if keys is None:
         selected = student_grades
