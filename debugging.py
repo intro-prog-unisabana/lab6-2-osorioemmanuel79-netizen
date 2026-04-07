@@ -1,6 +1,6 @@
 def show_inventory(inventory):
     print("\nCurrent Inventory:")
-    # Corrección 1: usar .items() para iterar correctamente
+    # Corrección 1: usar .items()
     for fruit, stock in inventory.items():
         print(f"{fruit}: {stock}")
     print()
@@ -8,21 +8,21 @@ def show_inventory(inventory):
 
 def add_fruit(inventory):
     fruit = input("Enter the name of the new fruit: ").strip()
-    if fruit in inventory.keys():
+    if fruit in inventory:
         print(f"{fruit} already exists!\n")
     else:
         stock = input(f"Enter stock for {fruit}: ")
-        # Corrección 2: usar = en vez de ==
+        # Corrección 2: usar = en lugar de ==
         inventory[fruit] = int(stock)
         print(f"{fruit} added with stock {stock}.\n")
 
 
 def update_stock(inventory):
     fruit = input("Enter the name of the fruit to update: ").strip()
-    # Corrección 3: verificar con keys() o directamente en inventory
+    # Corrección 3: verificar correctamente la clave
     if fruit in inventory:
         amount = input(f"Enter amount to add to {fruit}'s stock: ")
-        # Corrección 4: convertir a int antes de sumar
+        # Corrección 4: convertir a entero antes de sumar
         inventory[fruit] += int(amount)
         print(f"{fruit} stock increased by {amount}.\n")
     else:
@@ -38,9 +38,31 @@ def menu():
 
 
 def run_program():
-    # Corrección 5: faltaban comas en el diccionario
+    # Corrección 5: agregar comas en el diccionario
     inventory = {
         "apples": 10,
         "bananas": 20,
         "oranges": 15
     }
+
+    print("Welcome to the Fruit Shop!\n")
+
+    while True:
+        menu()
+        choice = input("Enter option number: ")
+
+        if choice == "1":
+            show_inventory(inventory)
+        elif choice == "2":
+            add_fruit(inventory)
+        elif choice == "3":
+            update_stock(inventory)
+        elif choice == "4":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid option.\n")
+
+
+# Ejecutar programa
+run_program()
