@@ -3,7 +3,7 @@ def show_inventory(inventory):
     # ¿Es esta la forma correcta de iterar sobre el diccionario?
     for fruit, stock in inventory:
         print(f"{fruit}: {stock}")
-    print()
+    print(f)
 
 def add_fruit(inventory):
     fruit = input("Enter the name of the new fruit: ").strip()
