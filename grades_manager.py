@@ -2,7 +2,7 @@ def add_student(student_grades=None):
     if student_grades is None:
         student_grades = {}
 
-    
+
     name = input("Enter student name:\n").title()
 
     subjects = {}
