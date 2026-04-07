@@ -43,4 +43,4 @@ def run_program():
         "apples": 10,
         "bananas": 20,
         "oranges": 15
-    }   
+    }
