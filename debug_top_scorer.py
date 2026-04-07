@@ -22,3 +22,5 @@ else:
             top_score = scores[name]
             top_name = name
     print(f"Top scorer: {top_name} with {top_score} points.")
+
+e
