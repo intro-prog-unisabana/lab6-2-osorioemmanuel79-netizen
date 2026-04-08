@@ -2,8 +2,8 @@ def student_averages(data):
     result = {}
 
     for student, grades in data.items():
-        avg = sum(grades.values()) / len(grades)
-        result[student] = round(avg)
+        average = sum(grades.values()) / len(grades)
+        result[student] = round(average)
 
     return result
 
@@ -11,7 +11,7 @@ def student_averages(data):
 def assignment_averages(data):
     result = {}
 
-    # Obtener todas las tareas
+    # Obtener las tareas (hw1, hw2, etc.)
     assignments = next(iter(data.values())).keys()
 
     for assignment in assignments:
@@ -20,8 +20,7 @@ def assignment_averages(data):
         for grades in data.values():
             total += grades[assignment]
 
-        avg = total / len(data)
-        result[assignment] = round(avg)
+        average = total / len(data)
+        result[assignment] = round(average)
 
     return result
-input()
