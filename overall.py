@@ -24,3 +24,4 @@ def assignment_averages(data):
         result[assignment] = round(avg)
 
     return result
+input()
