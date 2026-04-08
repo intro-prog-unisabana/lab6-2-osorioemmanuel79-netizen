@@ -34,5 +34,5 @@ Número de horas: 5
  *      con las regulaciones de la Universidad.  /s/ Ada Lovelace
  ******************************************************************************/
 
-[escribe y firma la declaración aquí] Esta tarea de programación representa mi propio trabajo de acuerdo
+[escribe y firma la declaración aquí] esta tarea de programación representa mi propio trabajo de acuerdo
  *      con las regulaciones de la Universidad.  /s/ emmanuel osorio bustacara
