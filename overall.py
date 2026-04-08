@@ -1,4 +1,7 @@
 def student_averages(data):
+    if not data:
+        return {}
+
     result = {}
 
     for student, grades in data.items():
@@ -9,9 +12,11 @@ def student_averages(data):
 
 
 def assignment_averages(data):
+    if not data:
+        return {}
+
     result = {}
 
-    # Obtener las tareas (hw1, hw2, etc.)
     assignments = next(iter(data.values())).keys()
 
     for assignment in assignments:
