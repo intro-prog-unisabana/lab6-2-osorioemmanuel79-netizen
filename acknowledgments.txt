@@ -16,8 +16,7 @@ Número de horas: 5
 /****************************************************************************
 * Escribe cualquier otro comentario aquí.
 ******************************************************************************/
-
-
+Gran laboratorio
 
 /****************************************************************************
  *  Proporciona el enlace de tu perfil de GitHub (ej. https://github.com/afbeltranp)
